@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #98715D;
+    color: #654321;
+    font-family: sora, sans-serif;
+    width: 100%; /* Ensures it spans the full width */
+    position: fixed; /* Sticks the navbar to the top */
+    top: 0; /* Aligns it at the very top */
+    left: 0; /* Aligns it to the left */
+    z-index: 1000; /* Keeps it above other elements */
+    box-sizing: border-box; /* Includes padding in width calculations */
+}
+  
+/* Fix body margin */
+body {
+    margin: 0; /* Removes default body margins */
+    padding: 0; /* Removes default body padding */
+    font-family: sora, sans-serif;
+}
+  
+/* Logo styling */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+  
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.nav-links li {
+    position: relative; /* Needed for dropdown positioning */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #654321;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+  
+/* Hover effect for Navigation Links */
+.nav-links li a:hover {
+    color: #D2B48C; /* Light brown color */
+    transform: scale(1.1); /* Slight enlargement */
+}
+
+/* Dropdown arrow styling */
+.dropdown-arrow {
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 0.8rem;
+    color: #654321;
+    transition: color 0.3s ease;
+}
+
+.dropdown-arrow:hover {
+    color: #D2B48C; /* Light brown color */
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Positions below the parent li */
+    left: 0;
+    background-color: #98715D;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px; /* Adjust as needed */
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    color: #654321;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Show dropdown menu on hover */
+.nav-links li:hover .dropdown-menu {
+    display: block;
+}
+
+/* Button styling */
+.dynamic-button {
+    background-color: #654321;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px 15px 25px 25px; /* Curved inside */
+    transition: background-color 0.3s ease, transform 0.6s ease;
+}
+  
+/* Hover effect for Button */
+.dynamic-button:hover {
+    background-color: #D2B48C; /* Light brown */
+    color: black;
+    transform: scale(1.1); /* Slight enlargement */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}

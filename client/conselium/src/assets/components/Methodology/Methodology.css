@@ -1,0 +1,73 @@
+/* General Styling */
+.methodology {
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+    color: #333;
+  }
+  
+  .methodology-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .methodology-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+  }
+  
+  /* Cards Container */
+  .methodology-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    justify-items: center;
+  }
+  
+  /* Individual Card Styling */
+  .card {
+    border: none; /* No background for the card */
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #654321;
+  }
+  
+  .card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .card li {
+    margin: 5px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .methodology-heading {
+      font-size: 2rem;
+    }
+  
+    .methodology-paragraph {
+      font-size: 1rem;
+    }
+  
+    .card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .card li {
+      font-size: 0.9rem;
+    }
+  }
+  

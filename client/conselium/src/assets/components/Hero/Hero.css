@@ -1,0 +1,92 @@
+/* Hero Section Container */
+* {
+    font-family: sora, sans-serif;
+  }
+  
+  .hero {
+    background-color: #98715D; /* Mocha Mousse color */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Main Heading */
+  .hero h1 {
+    font-size: 2.5rem;
+    padding-top: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    line-height: 1.5;
+  }
+  
+  /* Statue Container */
+  .statue-container {
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* 3D Statue Image */
+  .statue-image {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 10px; /* Adjust as needed */
+  }
+  
+  /* Points Section */
+  .points {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 2; /* Ensure it is above the hero background but below the statue image */
+  }
+  
+  .point {
+    width: 250px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #654321;
+    padding: 0px;
+    border-radius: 8px;
+  }
+  
+  .point-left {
+    margin-left: 100px; /* Adjust as needed */
+  }
+  
+  .point-right {
+    margin-right: 100px; /* Adjust as needed */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .statue-image {
+      width: 200px;
+    }
+  
+    .point {
+      width: 200px;
+      font-size: 0.9rem;
+    }
+  
+    .point-left {
+      margin-left: 10px;
+    }
+  
+    .point-right {
+      margin-right: 10px;
+    }
+  }
